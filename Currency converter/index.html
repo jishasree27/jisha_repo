@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USD to INR Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.converter {
+    margin: 1em 0;
+}
+
+#usdAmount {
+    padding: 0.5em;
+    font-size: 1em;
+    width: 70%;
+}
+
+#convertButton {
+    padding: 0.5em;
+    font-size: 1em;
+    margin-left: 0.5em;
+}
+
+#result {
+    margin-top: 1em;
+    font-size: 1.2em;
+    color: #333;
+}
+
+</style>
+<body>
+    <div class="container">
+        <h1>USD to INR Converter</h1>
+        <div class="converter">
+            <input type="number" id="usdAmount" placeholder="Enter amount in USD">
+            <button id="convertButton">Convert</button>
+        </div>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
